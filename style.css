@@ -1,0 +1,293 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #ede7f6;
+    font-family: Roboto Mono, monospace;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    width: 30%;
+    margin: auto;
+}
+
+#header-text span {
+    color: rgb(126, 87, 194);
+}
+
+#header-text h2 {
+    text-align: center;
+    margin: 0.83em 0px;
+    font-size: 26px;
+}
+
+#header-text+div {
+    display: flex;
+    justify-content: center;
+}
+
+#header-text+div input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid rgb(126, 87, 194);
+    border-radius: 7px;
+    outline-color: rgb(81, 45, 168);
+}
+
+#header-text+div+div {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 7px;
+    margin: 10px 0px;
+    outline-color: rgb(81, 45, 168);
+    border: 1px solid rgb(126, 87, 194);
+}
+
+#colors {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 10px;
+}
+
+#colors div:first-child {
+    display: flex;
+}
+
+#colors .colors__item {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    margin-right: 15px;
+    transition: 0.2s all ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.colors__item span{
+    display: none;
+    font-size: 18px;
+}
+
+
+
+#colors .colors__item:hover {
+    transform: translateY(-1px);
+    opacity: 0.7;
+}
+
+
+#colors .pink {
+    background-color: rgb(240, 98, 146);
+}
+
+#colors .purple {
+    background-color: rgb(186, 104, 200);
+}
+
+#colors .blue {
+    background-color: rgb(79, 195, 247);
+}
+
+#colors .yellow {
+    background-color: rgb(255, 213, 79);
+}
+
+#colors .green {
+    background-color: rgb(174, 213, 129);
+}
+
+#colors button {
+    padding: 10px 15px;
+    background-color: rgb(126, 87, 194);
+    border-radius: 10px;
+    font-weight: 500;
+    border: 1px;
+    color: #fff;
+    box-shadow: rgb(50 50 93 / 25%) 0px 2px 5px -1px, rgb(0 0 0 / 30%) 0px 1px 3px -1px;
+    transition: 0.2s all ease;
+}
+
+#colors button:hover {
+    cursor: pointer;
+    box-shadow: rgb(0 0 0 / 19%) 0px 10px 20px, rgb(0 0 0 / 23%) 0px 6px 6px;
+    opacity: 0.9;
+}
+
+
+#search-button {
+    margin: 20px auto 5px;
+    position: relative;
+}
+
+#search-button input {
+    width: 100%;
+    border-radius: 7px;
+    border: 1px solid rgb(126, 87, 194);
+    outline-color: rgb(81, 45, 168);
+    padding: 10px;
+
+}
+
+#search-button i {
+    position: absolute;
+    top: 28%;
+    right: 3%;
+    z-index: 99;
+    font-size: 16px;
+}
+
+
+#cards {
+    width: 70%;
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.cards__item {
+    width: 300px;
+    height: 350px;
+    border-radius: 15px;
+    border: 2px dashed rgb(240, 98, 146);
+    margin: 20px 20px 10px;
+    position: relative;
+}
+
+.cards__item h4 {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    padding: 10px;
+    text-align: left;
+    /* background-color: rgba(240, 98, 146, 0.4); */
+}
+
+.cards__item p {
+    padding: 10px;
+    height: 76%;
+    font-size: 14px;
+    overflow: auto;
+}
+
+
+.cards__item i {
+    position: absolute;
+    right: 10px;
+    top: 11px;
+    font-size: 20px;
+}
+
+.cards__item i:hover {
+    cursor: pointer;
+}
+
+
+
+
+
+@media only screen and (max-width: 1400px) {
+    .container {
+        width: 40%;
+    }
+}
+
+@media only screen and (max-width: 1100px) {
+    .container {
+        width: 50%;
+    }
+}
+
+@media only screen and (max-width: 1100px) {
+    .container {
+        width: 70%;
+    }
+}
+
+@media only screen and (max-width: 850px) {
+    .container {
+        width: 70%;
+    }
+
+    #cards .cards__item {
+        width: 280px;
+        height: 320px;
+        margin: 15px;
+    }
+
+    #cards .cards__item h4{
+        font-size: 15px;
+    }
+
+    #cards .cards__item p{
+        font-size: 13px;
+    }
+}
+
+
+@media only screen and (max-width: 600px) {
+    .container {
+        width: 90%;
+    }
+
+    #cards .cards__item {
+        width: 260px;
+        height: 300px;
+        margin: 10px
+    }
+
+    #cards .cards__item h4{
+        font-size: 14px;
+    }
+
+    #cards .cards__item p{
+        font-size: 12px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    #colors .colors__item {
+        width: 30px;
+        height: 30px;
+        transform: translateY(3px);
+    }
+}
+
+
+@media only screen and (max-width:400px) {
+    #cards .cards__item {
+        width: 240px;
+        height: 280px;
+        margin: 10px 0px;
+    }
+
+    #colors .colors__item {
+        width: 25px;
+        height: 25px;
+        margin-right: 7px;
+        transform: translateY(5px);
+    }
+
+    #cards .cards__item h4{
+        font-size: 13px;
+    }
+
+    #cards .cards__item p{
+        font-size: 11px;
+    }
+}

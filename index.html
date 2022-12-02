@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+
+    <div id="header-text" class="container">
+        <h2>Dada Redux <span>Note</span>Pad</h2>
+    </div>
+    <div class="container"><input id="titleInput" type="text" placeholder="Note Title"></div>
+
+    <div class="container">
+        <textarea id="noteInput" placeholder="Write note..." rows="8"></textarea>
+    </div>
+
+    <div id="colors" class="container">
+        <div>
+            <div class="colors__item pink"><span id="pink-check">✓</span></div>
+            <div class="colors__item purple"><span id="purple-check">✓</span></div>
+            <div class="colors__item blue"><span id="blue-chech">✓</span></div>
+            <div class="colors__item yellow"><span id="yellow-check">✓</span></div>
+            <div class="colors__item green"><span id="green-check">✓</span></div>
+        </div>
+        <button>Save ✓</button>
+
+    </div>
+
+    <div id="search-button" class="container">
+        <input type="text" placeholder="Write to Search..">
+        <i class="fa-solid fa-magnifying-glass"></i>
+    </div>
+
+    <div id="cards">
+
+    </div>
+
+
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
